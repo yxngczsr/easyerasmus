@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="imagens\logo.png" />
+
+    <link rel="stylesheet" href="bibliotecas\bootstrap\css\bootstrap.min.css" />
+    <link rel="stylesheet" href="css\font-awesome.min.css" />
+    <link rel="stylesheet" href="css\style.css" />
+    <script src="app\index.js"></script>
+    <script src="\js\jquery-3.6.0.min.js"></script>
+    <script src="bibliotecas\bootstrap\js\popper.min.js"></script>
+    <script src="bibliotecas\bootstrap\js\bootstrap.min.js"></script>
+    <script src="js\slider.js"></script>
+    <script src="js\main.js"></script>
+    <script src="js/programaRequest.js"></script>
+    <script src="js/result.js"></script>
+    <title>Requisitos</title>
+    <style>
+        #resultTableBody button.editButton {
+            background-color: #e73c37;
+            color: #fff;
+            padding: 6px 12px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #resultTableBody button.editButton:hover {
+            background-color: #e73c37;
+        }
+
+        #edicaoForm {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        #edicaoForm input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        #edicaoForm button {
+            background-color: #e73c37;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #edicaoForm button:hover {
+            background-color: #0056b3;
+        }
+
+
+        .navbar-wrapper {
+            margin-bottom: 200px;
+        }
+
+        .footer-area {
+            margin-top: 200px;
+        }
+    </style>
+</head>
+
+<body data-scroll-animation="true">
+
+    <div class="header-wrapper">
+        <div class="navbar-wrapper">
+            <div class="navbar-sticky header-2 header-transition set-sticky">
+                <header class="header">
+                    <nav class="navbar navbar-expand-lg menu_black">
+                        <div class="container">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="imagens\nomelogo.png" alt="logo">
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav menu ms-lg-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html" role="button" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Home
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about-us.html" role="button" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            About Us
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="features.html" role="button" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Features
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html" role="button" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Contact Us
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="login-stu.html" role="button" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Sign In
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <ul class="navbar-nav nav_right">
+                                <li class="nav-item ab-h-btn">
+                                    <a class="nav-link about-h-btn" role="button" href="signup-stu.html">
+                                        <i class="fa fa-graduation-cap"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item ab-h-btn">
+                                    <a class="nav-link about-h-btn" href="signup-stu.html">
+                                        <i class="fa fa-university"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+        </div>
+    </div>
+
+    <div class="titulo-area titulo-1" data-image-src="assets/images/services/one-background.jpg">
+        <div class="overlay" data-bg-color="#282835"></div>
+        <div class="container">
+
+        </div>
+    </div>
+
+    <div>
+        <h1>Results Page</h1>
+        <div id="resultContainer">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Universidade</th>
+                        <th>Curso</th>
+                        <th>Tipo de Programa</th>
+                        <th>Universidade de destino</th>
+                        <th>Pais Destino </th>
+                        <th>Cidade Destino </th>
+                        <th>Cursos</th>
+                        <th>Vagas</th>
+                        <th>Media</th>
+                    </tr>
+                </thead>
+                <tbody id="resultTableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <form id="edicaoForm">
+        <input type="hidden" name="prog_id">
+        <input type="text" name="prog_tipo" placeholder="Tipo de Programa">
+        <input type="text" name="prog_uni" placeholder="Universidade de Destino">
+        <input type="text" name="prog_pais" placeholder="Pais Destino">
+        <input type="text" name="prog_cid" placeholder="Cidade Destino">
+        <input type="hidden" name="of_id">
+        <input type="text" name="of_curso" placeholder="Cursos">
+        <input type="text" name="of_vaga" placeholder="Vagas">
+        <input type="hidden" name="req_id">
+        <input type="text" name="req_media" placeholder="Media">
+        <button type="button" onclick="enviarAtualizacao()">Atualizar</button>
+    </form>
+
+    <footer class="footer-area">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-lg-2 col-lg-5">
+                        <aside class="footer-widget widget_about" data-wow-delay="0.1s">
+                            <a href="index.html" class="f_logo">
+                                <img src="imagens\nomelogo.png" alt="logo">
+                            </a>
+                            <div class="subscriber-wrap subscriber2">
+                                <p>Recebe todas as novidades aqui!</p>
+                                <form class="subscribe subscriber-form" id="subscriber-form2" data-style="style2">
+                                    <input type="email" name="EMAIL" class="form-control form-newsletter"
+                                        id="form-email" placeholder="Email">
+                                    <button class="btn hover_btn" type="submit">subscrever
+                                        <i class="icon-arrow" aria-hidden="true"></i>
+                                    </button>
+                                </form>
+                                <div id="validator-subscriber" class="form-result subscriber-result-2"></div>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-lg-2 col-lg-7">
+                        <aside class="footer-widget widget_navigate">
+                            <h4 class="f-title">Navegação</h4>
+                            <ul class="footer-navigation">
+                                <li>
+                                    <a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="about-us.html"><i class="fa fa-angle-right" aria-hidden="true"></i> About
+                                        Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="features.html"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        Features
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contact.html"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contact.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Sign
+                                        In
+                                    </a>
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                ©2023 <a href="index.html">easyerasmus</a> All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script>
+        async function enviarAtualizacao() {
+            const adminId = obterAdminIdDoLocalStorage();
+
+            if (adminId) {
+                const form = document.getElementById('edicaoForm');
+                const formData = new FormData(form);
+
+                for (const [key, value] of formData.entries()) {
+                    if (value === '') {
+                        formData.delete(key);
+                    }
+                }
+
+                try {
+                    const response = await fetch(`/api/programa/atualizar-resultado/${adminId}`, {
+                        method: 'PUT',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(Object.fromEntries(formData)),
+                    });
+
+                    const data = await response.json();
+
+                    if (response.ok) {
+                        console.log("Atualização bem-sucedida:", data.message);
+                        obterEExibirResultados();
+                    } else {
+                        console.error("Erro na atualização:", data.error);
+                    }
+                } catch (error) {
+                    console.error("Erro na requisição:", error);
+                }
+            }
+        }
+
+        
+
+    </script>
+</body>
+</html>
