@@ -64,7 +64,12 @@ O nosso website é direcionado a estudantes universitários que têm interesse e
 # Descrição de Arquitetura
 
 ######
-A arquitetura de Solução
+A arquitetura de Solução para o nosso Website "easyerasmus" irá ser uma arquitetura dividida em três partes:  User,  Web tier,  Data tier e. Esta divisão permite que as diferentes partes sejam escaladas independentemente, caso seja necessário no futuro.
+1.	User, também conhecida como front-end e tal como o nome indica, representa a parte onde é possível os utilizadores obterem acesso e interagirem com o nosso website. Desta forma, é nesta parte onde está representada a componente WEB Browser.
+2.	Web tier, também conhecida como back-end, esta é responsável por manter o nosso website operacional e disponível na internet. Assim, a Web tier é composta 1 Web Server, onde vai estar implementada a REST API para lidar com as solicitações dos clientes.
+3.	Data tier  engloba um Database server para fornecer acesso à respetiva base de dado, que são responsáveis por armazenar e gerenciar os dados de forma eficiente e segura.
+![image](https://cdn.discordapp.com/attachments/932104587857522748/1247758931833524224/Screenshot_2024-06-05_at_04.17.34.png?ex=6661318f&is=665fe00f&hm=bce66e75df8bb146178d7dfccc8da2fbff4d64e18c29db99cf68452a4bda5d1a&)
+
 
 ######
 
