@@ -191,7 +191,7 @@ O suporte ao aluno é ampliado através da inclusão de um chatbot, onde este po
 # Esboço da Estrutura de Dados
 Vamos apresentar um diagrama simples que apresente a relação entre as entidades-chave e as relações que formam a base deste modelo
 
-![download](https://cdn.discordapp.com/attachments/932104587857522748/1175908578415087730/diagrama.PNG?ex=656cf134&is=655a7c34&hm=f52c557ba3c830ce07a2fe6921efdfa17d7200b13e16ce056da15aae4e41ee1c&)
+![download](https://cdn.discordapp.com/attachments/932104587857522748/1247760142511116318/Screenshot_2024-06-05_at_01.52.59.png?ex=666132b0&is=665fe130&hm=85be98cb20aa951c6644fbdb91a52b28eb554200cc00767891c6cbeb120a4d12&)
 
 
 # Interface
@@ -201,23 +201,23 @@ A interface do nosso website será caracterizada por um design simples, moderno 
 
 # Mockups
 
-![download](https://cdn.discordapp.com/attachments/933841062009643068/1163849053575065640/Captura_de_ecra_2023-10-17_as_15.29.50.png?ex=654111e5&is=652e9ce5&hm=04b1b4fb99f62d5ac89a7281fe9ff895296199b362cef47413a60082b6d17946&)
+![download](https://cdn.discordapp.com/attachments/932104587857522748/1247857364581748738/Frame_1.png?ex=66618d3b&is=66603bbb&hm=d61c04791672ae5d1ef30f0c9bcd8c023a515cb912c2f97781d9f9d05c90b49d&)
 
-![download](https://cdn.discordapp.com/attachments/933841062009643068/1163849053818339328/Captura_de_ecra_2023-10-17_as_15.30.58.png?ex=654111e5&is=652e9ce5&hm=51f62e6fb8a56afec6280e4d7a547bf7c08563ad71306804bbabf7550e34dc1b&)
+![download](https://cdn.discordapp.com/attachments/932104587857522748/1247857634921549874/Frame_5.png?ex=66618d7c&is=66603bfc&hm=eba36b5b83bba86e7ee4fb83e1ca379808782beffa48b14e492099b132e964a7&)
 
-![download](https://cdn.discordapp.com/attachments/933841062009643068/1163849054028058815/Captura_de_ecra_2023-10-17_as_15.32.38.png?ex=654111e5&is=652e9ce5&hm=775d9c5e36ea774fc8a683f29449419e2a6bf2fbd213bfdd9a4626845093ebef&)
+![download](https://cdn.discordapp.com/attachments/932104587857522748/1247857635143843943/Frame_6.png?ex=66618d7c&is=66603bfc&hm=8fd8e01c69989e9697427a6af5ecaed27d37681579e37bb425a1064cd8e456a8&)
 
-![download](https://cdn.discordapp.com/attachments/933841062009643068/1163849054258737202/Captura_de_ecra_2023-10-17_as_15.33.24.png?ex=654111e5&is=652e9ce5&hm=f959d24c174438a52c4bb1b0e15776a3c6799554fac60a4358bc27b77fe6a7ee&)
+![download](https://cdn.discordapp.com/attachments/932104587857522748/1247857635424735333/Frame_10.png?ex=66618d7c&is=66603bfc&hm=5d4121d1bda48b7fa77c0fd45ddcf43fb9d302f820451a6d7b8ad29d7226a83c&)
 
-![download](https://cdn.discordapp.com/attachments/933841062009643068/1163849054489428109/Captura_de_ecra_2023-10-17_as_15.34.05.png?ex=654111e5&is=652e9ce5&hm=537febed706076fcd11de9057d48b9c7980ad54699635f142bab413bb3e7fb48&)
+![download](https://cdn.discordapp.com/attachments/932104587857522748/1247857635701817446/Frame_11.png?ex=66618d7c&is=66603bfc&hm=83b5fa56b92b373d14c8b77059744e12840db1e1daee6d787d70210e42c07cfc&)
 
-![download](https://cdn.discordapp.com/attachments/933841062009643068/1163849054745284809/Captura_de_ecra_2023-10-17_as_15.34.52.png?ex=654111e5&is=652e9ce5&hm=45db96759f35421f55377ff64fe9ee0c729dab70406a13c7c48542f2a8a7d165&)
+![download](https://cdn.discordapp.com/attachments/932104587857522748/1247857635945091082/Frame_7.png?ex=66618d7c&is=66603bfc&hm=d0c73499241ad24b98aa813f39e80ce8ddfee8d152e6a77bcb3f6d71c1d5356f&)
 
-![download](https://cdn.discordapp.com/attachments/933841062009643068/1163849054996934686/Captura_de_ecra_2023-10-17_as_15.36.39.png?ex=654111e5&is=652e9ce5&hm=5ec38cbf0dafca5b6041b461dd17a1fc7e85b4d202276e216bcfd502dfb2940e&)
+![download](https://cdn.discordapp.com/attachments/932104587857522748/1247857636280504420/Frame_8.png?ex=66618d7c&is=66603bfc&hm=7aa5edaac5679c83a26e8145007e5b5c6eba906daf79c4ed192f0dba43328eaf&)
 
-![download](https://cdn.discordapp.com/attachments/933841062009643068/1163849054996934686/Captura_de_ecra_2023-10-17_as_15.36.39.png?ex=654111e5&is=652e9ce5&hm=5ec38cbf0dafca5b6041b461dd17a1fc7e85b4d202276e216bcfd502dfb2940e&)
+![download](https://cdn.discordapp.com/attachments/932104587857522748/1247857636704256040/Frame_9.png?ex=66618d7c&is=66603bfc&hm=12787ecefaebb2d09f74a399158b54cb160d55e77cff98b14844e3a490a9ec63&)
 
-![download](https://cdn.discordapp.com/attachments/933841062009643068/1163849055252791337/Captura_de_ecra_2023-10-17_as_15.37.46.png?ex=654111e6&is=652e9ce6&hm=f56fdc0d72c7b17b848b318b2cba1ab4b92346ae3aeb4548ea0beccd1fbee3a1&)
+![download](https://cdn.discordapp.com/attachments/932104587857522748/1247857637102583909/Frame_12.png?ex=66618d7c&is=66603bfc&hm=71d810596fd605a3698bd6535bf919fd3a912ec79cd52feb095c97b9c845cc51&)
 
 # Cenários e Personas
 
