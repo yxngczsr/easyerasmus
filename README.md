@@ -325,12 +325,7 @@ Sucesso: Status 204 	|
 | Dados: { "prog_tipo": "erasmus", "prog_uni": "universidade", "prog_pais": "espanha", "prog_cid": "barcelona", "prog_vaga": 50  } 
 Sucesso: {"message": "Programa adicionado com sucesso"} 	|
 | Erros: 404: "Not Found" 500: erro no servidor                                                                                               	|
-    
-
-
-# Progressos semanais
-
-
+   
 
 # Conclusão
 
