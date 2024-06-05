@@ -167,7 +167,7 @@ O modelo de domínio é essencial para o desenvolvimento de um website. Com o ob
 Este modelo de domínio criado irá evidenciar de forma mais eficaz as partes necessárias para definir um sistema de software, incluindo elementos relacionados aos eramus, a iteração entre os estudantes e as universidades, as informações que vão estar disponíveis no website e muito mais.
 
 # Casos de uso
-![download](https://cdn.discordapp.com/attachments/932104587857522748/1175907212779073556/casouso.PNG?ex=656cefee&is=655a7aee&hm=1033b17518ce2fec1e010efe14cfb8e9b4b3d011910652abbd0a8534099eac6d&)
+![download](https://cdn.discordapp.com/attachments/932104587857522748/1247759554809430106/Screenshot_2024-06-05_at_04.50.39.png?ex=66613224&is=665fe0a4&hm=e7d375f0cc157b5e1061a2b3004dcc58cd9bc7b44a9c967fdaf4b801291b3c61&)
 
 Administrador:
 ######
