@@ -191,7 +191,7 @@ O suporte ao aluno é ampliado através da inclusão de um chatbot, onde este po
 # Esboço da Estrutura de Dados
 Vamos apresentar um diagrama simples que apresente a relação entre as entidades-chave e as relações que formam a base deste modelo
 
-![download]([https://cdn.discordapp.com/attachments/932104587857522748/1175908578415087730/diagrama.PNG?ex=656cf134&is=655a7c34&hm=f52c557ba3c830ce07a2fe6921efdfa17d7200b13e16ce056da15aae4e41ee1c&)
+![download](https://cdn.discordapp.com/attachments/932104587857522748/1175908578415087730/diagrama.PNG?ex=656cf134&is=655a7c34&hm=f52c557ba3c830ce07a2fe6921efdfa17d7200b13e16ce056da15aae4e41ee1c&)
 
 
 # Interface
