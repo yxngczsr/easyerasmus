@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="bibliotecas\bootstrap\css\bootstrap.min.css" />
     <link rel="stylesheet" href="css\font-awesome.min.css" />
     <link rel="stylesheet" href="css\style.css" />
+    
     <script src="app\index.js"></script>
     <script src="\js\jquery-3.6.0.min.js"></script>
     <script src="bibliotecas\bootstrap\js\popper.min.js"></script>
@@ -17,7 +18,9 @@
     <script src="js\main.js"></script>
     <script src="js/programaRequest.js"></script>
     <script src="js/cursoRequest.js"></script>
+    
     <title>Requisitos</title>
+    
 </head>
 
 <body data-scroll-animation="true">
@@ -42,47 +45,37 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="about-us.html" role="button" aria-haspopup="true"
+                                        <a class="nav-link" href="about-us-uni.html" role="button" aria-haspopup="true"
                                             aria-expanded="false">
                                             About Us
                                         </a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="features.html" role="button" aria-haspopup="true"
+                                        <a class="nav-link" href="features-uni.html" role="button" aria-haspopup="true"
                                             aria-expanded="false">
                                             Features
                                         </a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="contact.html" role="button" aria-haspopup="true"
+                                        <a class="nav-link" href="contact-uni.html" role="button" aria-haspopup="true"
                                             aria-expanded="false">
                                             Contact Us
                                         </a>
-                                    </li>
-
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="signInDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Sign In
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="signInDropdown">
-                                            <a class="dropdown-item" href="login-stu.html">Estudante</a>
-                                            <a class="dropdown-item" href="login-uni.html">Universidade</a>
-                                        </div>
                                     </li>
                                 </ul>
                             </div>
 
                             <ul class="navbar-nav nav_right">
                                 <li class="nav-item ab-h-btn">
-                                    <a class="nav-link about-h-btn" role="button" href="signup-stu.html">
-                                        <i class="fa fa-graduation-cap"></i>
+                                    <a class="nav-link about-h-btn" role="button" href="#">
+                                        <i class="fa fa-university"></i>
                                     </a>
                                 </li>
                                 <li class="nav-item ab-h-btn">
-                                    <a class="nav-link about-h-btn" href="signup-stu.html">
-                                        <i class="fa fa-university"></i>
+                                    <a class="nav-link about-h-btn" href="#">
+                                        <i class="fa fa-sign-out"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -90,13 +83,6 @@
                     </nav>
                 </header>
             </div>
-        </div>
-    </div>
-
-    <div class="titulo-area titulo-1" data-image-src="assets/images/services/one-background.jpg">
-        <div class="overlay" data-bg-color="#282835"></div>
-        <div class="container">
-
         </div>
     </div>
 
@@ -121,9 +107,8 @@
                             <div class="col-lg-12 text-center">
                                 <button type="button" id="adicionarRequisitosButton" class="btn"
                                     onclick="adicionarRequisitoAOferta()">Adicionar Requisitos</button>
-
-                                <div id="mail_success_req" class="success">Enviada!.</div>
-                                <div id="mail_fail_req" class="error">Erro.</div>
+                                    <div id="mail_success_req" class="success" style="display: none;"></div>
+                                    <div id="mail_fail_req" class="error" style="display: none;"></div>
                             </div>
                         </div>
                     </form>
@@ -217,45 +202,42 @@
             console.log("Página de requisitos - Início da função adicionarRequisitoAOferta");
             const ofertaId = await obterOfertaId();
             console.log("Página de requisitos - Oferta ID: ", ofertaId);
-
-            const req_curso_element = document.getElementById("req_curso");
-            const req_curso_id = req_curso_element.value;
-
+            const req_curso = document.getElementById("req_curso").value;
             const req_media = document.getElementById("req_media").value;
-
+        
             try {
                 console.log("Oferta ID na função adicionarRequisitoAOferta:", ofertaId);
-                if (req_curso_id === undefined) {
-                    alert("Por favor, selecione um curso.");
-                    return;
-                }
-
                 const response = await fetch(`/api/programa/adicionar-requisitos/${ofertaId}`, {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
                     },
                     body: JSON.stringify({
-                        curso_id: req_curso_id,
+                        curso_id: req_curso,  // Alterado para enviar o ID do curso
                         req_media,
                         ofertaId: ofertaId,
                     }),
                 });
-
+        
                 if (response.ok) {
                     const data = await response.json();
-                    alert(data.message);
-                    window.location.href = `result.html`;
+                    document.getElementById('mail_success_req').textContent = data.message;
+                    document.getElementById('mail_fail_req').style.display = 'none';
+                    document.getElementById('mail_success_req').style.display = 'block';
+        
+                    // Redirecionar para outra página após 2 segundos
+                    setTimeout(() => {
+                        window.location.href = 'result.html'; // Substitua 'result.html' pela página desejada
+                    }, 2000);
                 } else {
-                    alert("Erro ao adicionar requisitos ao programa.");
+                    document.getElementById('mail_fail_req').textContent = "Erro ao adicionar requisitos ao programa.";
+                    document.getElementById('mail_fail_req').style.display = 'block';
+                    document.getElementById('mail_success_req').style.display = 'none';
                 }
-
             } catch (error) {
                 console.error("Erro:", error);
             }
-        }
-
-
+        }        
     </script>
 </body>
 

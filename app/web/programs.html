@@ -43,52 +43,40 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="about-us.html" role="button" aria-haspopup="true"
+                                        <a class="nav-link" href="about-us-uni.html" role="button" aria-haspopup="true"
                                             aria-expanded="false">
                                             About Us
                                         </a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="features.html" role="button" aria-haspopup="true"
+                                        <a class="nav-link" href="features-uni.html" role="button" aria-haspopup="true"
                                             aria-expanded="false">
                                             Features
                                         </a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="contact.html" role="button" aria-haspopup="true"
+                                        <a class="nav-link" href="contact-uni.html" role="button" aria-haspopup="true"
                                             aria-expanded="false">
                                             Contact Us
                                         </a>
                                     </li>
-
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="signInDropdown" role="button"
-                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Sign In
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="signInDropdown">
-                                            <a class="dropdown-item" href="login-stu.html">Estudante</a>
-                                            <a class="dropdown-item" href="login-uni.html">Universidade</a>
-                                        </div>
-                                    </li>
-                                    </li>
+                                        
+                                    <ul class="navbar-nav nav_right">
+                                        <li class="nav-item ab-h-btn">
+                                            <a class="nav-link about-h-btn" role="button" href="#">
+                                                <i class="fa fa-university"></i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item ab-h-btn">
+                                            <a class="nav-link about-h-btn" href="#">
+                                                <i class="fa fa-sign-out"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </ul>
                             </div>
-
-                            <ul class="navbar-nav nav_right">
-                                <li class="nav-item ab-h-btn">
-                                    <a class="nav-link about-h-btn" role="button" href="signup-stu.html">
-                                        <i class="fa fa-graduation-cap"></i>
-                                    </a>
-                                </li>
-                                <li class="nav-item ab-h-btn">
-                                    <a class="nav-link about-h-btn" href="signup-uni.html">
-                                        <i class="fa fa-university"></i>
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </nav>
                 </header>
@@ -116,7 +104,6 @@
                     </thead>
 
                     <tbody id="table-body">
-                        <!-- Dados serão preenchidos dinamicamente pelo script -->
                     </tbody>
                 </table>
             </div>
@@ -139,21 +126,18 @@
                 programas.forEach(programa => {
                     const newRow = tableBody.insertRow();
 
-                    // Adicione as células com os dados do programa
                     const programaCells = ["progPais", "progTipo", "progUni", "progCid"];
                     programaCells.forEach(cell => {
                         const newCell = newRow.insertCell();
                         newCell.textContent = programa[cell];
                     });
 
-                    // Adicione as células com os dados da oferta
                     const ofertaCells = ["ofCurso", "ofVaga"];
                     ofertaCells.forEach(cell => {
                         const newCell = newRow.insertCell();
                         newCell.textContent = programa[cell];
                     });
 
-                    // Adicione as células com os dados dos requisitos
                     const requisitosCells = ["reqCurso", "reqMedia"];
                     requisitosCells.forEach(cell => {
                         const newCell = newRow.insertCell();
@@ -205,7 +189,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="about-us.html"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    <a href="about-us-uni.html"><i class="fa fa-angle-right" aria-hidden="true"></i>
                                         About Us
                                     </a>
                                 </li>

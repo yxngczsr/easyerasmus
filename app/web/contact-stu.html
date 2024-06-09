@@ -18,7 +18,7 @@
     <script src="js\slider.js"></script>
     <script src="js\main.js"></script>
 
-    <title> About Us </title>
+    <title> Contactos </title>
 >
 </head>
 
@@ -44,7 +44,7 @@
                                     </li>
                                     
                                     <li class="nav-item">
-                                        <a class="nav-link" href="about-us.html"
+                                        <a class="nav-link" href="about-us-stu.html"
                                             role="button"  aria-haspopup="true"
                                             aria-expanded="false">
                                             About Us
@@ -52,7 +52,7 @@
                                     </li>
                                     
                                     <li class="nav-item">
-                                        <a class="nav-link" href="features.html" role="button"
+                                        <a class="nav-link" href="features-stu.html" role="button"
                                             aria-haspopup="true" aria-expanded="false">
                                             Features
                                         </a>
@@ -60,34 +60,23 @@
                                     
                                     
                                     <li class="nav-item">
-                                        <a class="nav-link" href="contact.html" role="button"
+                                        <a class="nav-link" href="contact-stu.html" role="button"
                                             aria-haspopup="true" aria-expanded="false">
                                             Contact Us
                                         </a>
                                     </li>
-                                    
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="signInDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Sign In
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="signInDropdown">
-                                            <a class="dropdown-item" href="login-stu.html">Estudante</a>
-                                            <a class="dropdown-item" href="login-uni.html">Universidade</a>
-                                        </div>
-                                    </li>
                                 </ul>
                             </div>
                             
-                            
                             <ul class="navbar-nav nav_right">
                                 <li class="nav-item ab-h-btn">
-                                    <a class="nav-link about-h-btn" role="button" href="signup-stu.html">
-                                        <i class="fa fa-graduation-cap"></i>
+                                    <a class="nav-link about-h-btn" role="button" href="#">
+                                        <i class="fa fa-university"></i>
                                     </a>
                                 </li>
                                 <li class="nav-item ab-h-btn">
-                                    <a class="nav-link about-h-btn" href="signup-uni.html">
-                                        <i class="fa fa-university"></i>
+                                    <a class="nav-link about-h-btn" href="#">
+                                        <i class="fa fa-sign-out"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -97,25 +86,59 @@
             </div>
         </div>
     </div>
-    
+
+    <!-- Contactos -->
     <div class="contact-area-two">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="dobra-content">
-        
-                        <p>A easyerasmus foi criada com o propósito de fornecer informações essenciais a todos os estudantes sobre as opções de destino disponíveis para um programa Erasmus oferecidas pela respetiva universidade.</p>
-                        <p>Um dos principais objetivos desta plataforma é estabelecer um ambiente virtual onde cada instituição de ensino superior possa inserir detalhes relevantes sobre os países de destino, os tipos de programas oferecidos, as cidades associadas, as universidades parceiras e o número de vagas disponíveis para cada curso ou área de estudo específica.</p>
-                    </div>
+                <div class="col-md-7">
+                    <form action="#" method="POST" id="contact_form" class="contact-form-box"
+                        data-wow-delay="0.2s">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Primeiro Nome">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="lname" id="lname" class="form-control" placeholder="Último nome">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="number" name="phone" id="phone" class="form-control" placeholder="Telemóvel">
+                            </div>
+                            <div class="col-md-12">
+                                <textarea class="form-control" name="message" id="message"
+                                    placeholder="Mensagem..."></textarea>
+                            </div>
+                            <div class="col-lg-12">
+                                <button type="submit" id="send_message" class="btn sub-btn">Enviar</button>
+                                <div id="mail_success" class="success">Enviado com sucesso.</div>
+                                <div id="mail_fail" class="error">Tenta outra vez.
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-lg-6">
-                    <div class="banner_img">
-                        <img class="layer layer2 img_one" data-depth="-0.20" src="\imagens\pexels-photo-1106468.jpeg" alt="banner-img">
+                <div class="col-md-5">
+                    <div class="contact-info wow" data-wow-delay="0.4s">
+                        <h2>Contacta-nos !</h2>
+            
+                        <div class="contact-address">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 850
+                                    Av. Dom Carlos I 4, 1200-649 Lisboa</a></li>
+                                
+                                <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    easyerasmus@iade.pt</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Footer -->
     <footer class="footer-area">
         <div class="container">
@@ -178,5 +201,6 @@
                 ©2024 <a href="index.html"> easyerasmus </a> All rights reserved.
             </div>
         </div>
-    </footer> 
+    </footer>
+</body>
 </html>

@@ -19,34 +19,25 @@
     <script src="js/programaRequest.js"></script>
     <script src="js/cursoRequest.js"></script>
     <script src="js/userRequests.js"></script>
-
-    <script src="js\chatbot.js" defer></script>
     
     <title>CursoSTU</title>
     <style>
         body {
             padding-top: 200px;
-            /* Ajuste conforme necessário para deixar espaço suficiente para a navbar */
+            
             margin-bottom: 200px;
-            /* Ajuste conforme necessário para deixar espaço suficiente para o footer */
         }
-
         .footer-area {
             margin-top: 60px;
-            /* ou qualquer valor desejado */
         }
 
         .footer-area .container {
             padding-top: 60px;
-            /* ou qualquer valor desejado */
         }
 
         .main-content {
             margin-bottom: 60px;
-            /* ou qualquer valor desejado */
         }
-
-        /* Adicione estilos personalizados conforme necessário */
     </style>
 </head>
 
@@ -72,47 +63,37 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="about-us.html" role="button" aria-haspopup="true"
+                                        <a class="nav-link" href="about-us-stu.html" role="button" aria-haspopup="true"
                                             aria-expanded="false">
                                             About Us
                                         </a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="features.html" role="button" aria-haspopup="true"
+                                        <a class="nav-link" href="features-stu.html" role="button" aria-haspopup="true"
                                             aria-expanded="false">
                                             Features
                                         </a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="contact.html" role="button" aria-haspopup="true"
+                                        <a class="nav-link" href="contact-stu.html" role="button" aria-haspopup="true"
                                             aria-expanded="false">
                                             Contact Us
                                         </a>
-                                    </li>
-
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="signInDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Sign In
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="signInDropdown">
-                                            <a class="dropdown-item" href="login-stu.html">Estudante</a>
-                                            <a class="dropdown-item" href="login-uni.html">Universidade</a>
-                                        </div>
                                     </li>
                                 </ul>
                             </div>
 
                             <ul class="navbar-nav nav_right">
                                 <li class="nav-item ab-h-btn">
-                                    <a class="nav-link about-h-btn" role="button" href="signup-stu.html">
+                                    <a class="nav-link about-h-btn" role="button" href="#">
                                         <i class="fa fa-graduation-cap"></i>
                                     </a>
                                 </li>
                                 <li class="nav-item ab-h-btn">
-                                    <a class="nav-link about-h-btn" href="signup-stu.html">
-                                        <i class="fa fa-university"></i>
+                                    <a class="nav-link about-h-btn" href="#">
+                                        <i class="fa fa-sign-out"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -124,32 +105,27 @@
     </div>
 
     <!-- cursos-stu.html -->
-    <section class="banner_area">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-md-6">
-                    <div class="contact-form-box text-center">
-                        <h2 class="section-title">Selecione o seu curso</h2>
-                        <form action="script" method="GET" id="curso_form">
-                            <input type="hidden" name="estId" id="estIdInput" />
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <select name="curso_nome" id="curso_nome" class="form-control">
-                                        <!-- Options will be dynamically filled via JavaScript -->
-                                    </select>
-                                </div>
-                                <div class="col-md-12 mt-3">
-                                    <button id="listarCursosBtn" class="btn btn-primary btn-block">Listar Cursos</button>
-                                </div>
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6">
+                <div class="contact-form-box text-center">
+                    <h2 class="section-title">Selecione o seu curso</h2>
+                    <form action="script" method="GET" id="curso_form">
+                        <input type="hidden" name="estId" id="estIdInput" />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <select name="curso_nome" id="curso_nome" class="form-control">
+                                </select>
                             </div>
-                        </form>
-                    </div>
+                            <div class="col-md-12 mt-3">
+                                <button id="listarCursosBtn" class="btn btn-primary btn-block">Listar Cursos</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
-    
-
+    </div>
 
     <footer class="footer-area">
         <div class="container">
