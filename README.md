@@ -249,22 +249,8 @@ A interface do nosso website será caracterizada por um design simples, moderno 
 | RF9    | O utilizador deve conseguir recuperar a sua password.                                                                    | Should Have      |
 | RF10    | O estudante  deve ter acesso às ofertas de programas de mobilidade .                                                     | Must Have        |
 | RF11    | O estudante deve ter acesso às informações sobre as cidades que cada programa de mobilidade disponibiliza.               | Must Have        |
-| --- |     -------------------------------------------------------------------------------------------------    | ------- |
-| RNF1    | Garantir a segurança dos dados pessoais dos utilizadores por meio de criptografia e práticas de segurança adequadas.     | Must Have        |
-| RNF2    | Proteger o Website contra ataques cibernéticos implementando WAF (Web Application Firewall)                              | Nice to have     |
-| RNF3    | Garantir que o website seja responsivo e tenha um tempo de carregamento rápido.                                          | Must Have        |
-| RNF4    | Proteger o site de forma a que consiga lidar com o aumento de utilizadores e informação.                                 | Should Have      |
-| RFN5    | Implementar um CMS que facilita a atualização regular das informações do website .                                       | Nice to have     |
-| RNF6    | Automatizar backups regurales dos dados do website e implementar um plano de recuperação de desastres.                   | Should Have      |
-| RFN7    | Cumprir todas as regulamentações legais, incluindo leis da privacidade de dados.                                         | Nice to have     |
-| RNF8    | Uso bibliotecas para gerenciamento de sessões de usuário e hashing de senhas.                                            | Should Have      |
-| RNF9   | Implementação de uma CDN                                                                                                 | Nice to have     |
-| RNF10   | Implementação de TLS (Transport Layer Security) e HTTPS (Hypertext Transfer Protocol Secure) para proteção de dados      | Nice to Have     |
 
 RF- Requisito Funcional  
-
-RFN- Requisito Não Funcional  
-
 
 # Plano de Trabalho e Tecnologias 
 | Front-end     	| -Usar HTML para criação do design do website; -CSS para estilizar o website; -JS para a interatividade do website;                                                                                                                             	|
