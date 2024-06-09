@@ -6,7 +6,7 @@
 
 ### Trabalho realizado no âmbito da Unidade Curricular de Projeto de Desenvolvimento Web
 
-######
+#####
 
 Trabalho desenvolvido em colaboração com:
 Afonso Silva nº 20210859
