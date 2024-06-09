@@ -262,12 +262,8 @@ RF- Requisito Funcional
 | Front-end     	| -Usar HTML para criação do design do website; -CSS para estilizar o website; -JS para a interatividade do website;                                                                                                                             	|
 |---------------	|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
 | Back-end      	| -Node.js e PostgresSQL para desenvolvimento da REST API; -Criar endpoints RESTful para manipular solicitações HTTP; -Uso de bibliotecas para gerar sessões de utilizadores e hashing de senhas;                                                	|
-| Base de dados 	| -Configuação do servidor na instância AWS; -Criar o esquema de base de dados e como este será organizado e relacionado;  	|                                                                                         	|
+| Base de dados 	| -Postgres SQL;  	|                                                                                         	|
 | Organização   	| -Organização do projeto é realizada no GitHub                                                                                                                                                                                                  	|
-
-# Testes e validações do Software
-
-O teste ao software que estamos a desenvolver será feito por estudantes universitários. Ou seja, a partir da ferramenta ‘useberry’ pretendemos criar testes com a nossa interface, para perceber se esta está desenvolvida de forma compreensiva e sem hipótese de dúvida por parte do utilizador, é aqui que vamos ver encontrar possíveis falhas e assim podemos aperfeiçoar a interface consoante a necessidade do utilizador.
 
 # Documentação REST
 | Registar admin                                                                                                                              	|
