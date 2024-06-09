@@ -94,6 +94,10 @@ button:focus {
   background: #F2F2F2 !important;
 }
 
+.success .error {
+  display: none;
+}
+
 .error {
   clear: both;
   color: #e73c37;

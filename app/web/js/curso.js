@@ -4,7 +4,6 @@ async function adicionarCurso() {
     const cursoNome = document.getElementById('curso_nome').value;
 
     try {
-        // Recuperar o adminId da URL
         const urlParams = new URLSearchParams(window.location.search);
         const adminId = urlParams.get('adminId') || '';
 
@@ -28,7 +27,10 @@ async function adicionarCurso() {
                 console.log("Curso ID:", cursoId);
 
                 document.getElementById('cursoIdContainer').textContent = cursoId;
-                window.location.href = `upload.html?cursoId=${cursoId}&adminId=${adminId}`;
+
+                setTimeout(() => {
+                    window.location.href = `upload.html?cursoId=${cursoId}&adminId=${adminId}`;
+                }, 2000);
 
             } catch (error) {
                 console.error('Erro ao processar resposta JSON:', error);
