@@ -182,7 +182,6 @@ Os administradores são os responsáveis pelos departamentos de mobilidade de ca
 
 Após o registo e posterior login, o administrador consegue publicar informações quanto aos programas de mobilidade na plataforma. Ele pode adicionar novos programas, fornecendo informações detalhadas sobre os programas, como o país, nome do programa, universidade, cidade e informações da mesma, e vagas disponíveis. Além de publicar programas, o administrador é também responsável por manter as informações atualizadas. Se houver alterações nos programas existentes, como cursos oferecidos ou vagas disponíveis, o administrador deve atualizar essas informações no website. 
 
-Os administradores também oferecem suporte aos alunos interessados nos programas. O website terá implementado um chatbot que responde a perguntas frequentes e fornece informações básicas sobre os programas. Caso seja efetuada uma pergunta à qual o chatbot não tem resposta, o administrador entra em contacto com o aluno.
 ######
 Estudante:
 ######
@@ -192,7 +191,7 @@ Após o registo e o posterior login, o aluno pode visualizar os programas de mob
 
 Enquanto explora os programas, o aluno pode solicitar suporte para obter informações adicionais ou esclarecer dúvidas.
 
-O suporte ao aluno é ampliado através da inclusão de um chatbot, onde este poderá iniciar uma conversa com o chatbot a qualquer momento para obter respostas rápidas e informações adicionais sobre os programas de mobilidade. Caso nos deseje contactar por um meio alternativo, poderá fazê-lo através do email.
+O suporte ao aluno é ampliado através da possibilidade do contacto via email.
 
 
 # Esboço da Estrutura de Dados
